@@ -1,22 +1,13 @@
 package com.automation.base;
 
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
+import com.automation.pages.LoginPage;
 
-import java.time.Duration;
+public class BaseTest extends BaseSetup {
 
-public class BaseTest {
+    protected static LoginPage loginPage;
 
-    protected static WebDriver driver;
-
-    public void setUp() {
-        driver = new ChromeDriver();
-        driver.manage().window().maximize();
-        driver.get("https://opensource-demo.orangehrmlive.com");
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+    public static void setUpPageObjects() {
+        loginPage = new LoginPage(driver);
     }
 
-    public void tearDown() {
-        driver.quit();
-    }
 }

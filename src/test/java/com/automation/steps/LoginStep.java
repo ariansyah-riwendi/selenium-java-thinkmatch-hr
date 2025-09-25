@@ -1,13 +1,13 @@
 package com.automation.steps;
 
-import com.automation.base.BaseSetup;
+import com.automation.base.BaseTest;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.testng.Assert;
 
-public class LoginStep extends BaseSetup {
+public class LoginStep extends BaseTest {
 
     @Given("user is on the login page")
     public void userIsOnTheLoginPage(){
