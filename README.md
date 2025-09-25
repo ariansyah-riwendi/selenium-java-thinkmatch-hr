@@ -69,7 +69,7 @@ ___
 1. Open **IntelliJ IDEA**.
 2. From the main menu, select: File → New → Project from Version Control...
 3. Select **Git** from the list.
-4. Paste the repository URL: https://github.com/your-username/selenium-java-part-01-basic.git
+4. Paste the repository URL: https://github.com/ariansyah-riwendi/selenium-java-part-03-cucumber.git
 5. Click **Clone**.
 6. Wait for IntelliJ to finish downloading the project and load all dependencies.
 
