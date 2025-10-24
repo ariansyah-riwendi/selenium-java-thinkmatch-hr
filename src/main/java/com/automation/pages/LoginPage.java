@@ -8,10 +8,10 @@ public class LoginPage {
 
     private final Utils utils;
 
-    private final By loginPageImage = By.xpath("//*[@id='root']/div/section/main/div/div/div[1]/a/img");
-    private final By emailField = By.id("email");
+    private final By loginPageImage = By.xpath("//*[@id='root']/div/section/main/div[2]/div/div[1]/a/img");
+    private final By emailField = By.id("username");
     private final By passwordField = By.id("password");
-    private final By signInButton = By.xpath("//*[@id='root']/div/section/main/div/div/form/div[3]/button");
+    private final By signInButton = By.xpath("//*[@id='root']/div/section/main/div[2]/div/div[2]/div/form/button");
     private final By logoImage = By.xpath("//*[@id='root']/div/aside/div[1]/a/img");
 
     public LoginPage(WebDriver driver) {

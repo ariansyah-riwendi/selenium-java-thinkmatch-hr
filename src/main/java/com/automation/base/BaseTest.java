@@ -6,16 +6,18 @@ public class BaseTest extends BaseSetup {
 
     protected static LoginPage loginPage;
     protected  static DashboardPage dashboardPage;
-    protected static ListCompanyPage listCompanyPage;
-    protected static ListUserPage listUserPage;
-    protected static SuperPortalUserPage superPortalUserPage;
+    protected static WorkPlacementPage workPlacementPage;
+    protected static EmploymentStatusPage employmentStatusPage;
+    protected static CompanyStructurePage companyStructurePage;
+    protected static ListEmployeePage listEmployeePage;
 
     public static void setUpPageObjects() {
         loginPage = new LoginPage(driver);
         dashboardPage = new DashboardPage(driver);
-        listCompanyPage = new ListCompanyPage(driver);
-        listUserPage = new ListUserPage(driver);
-        superPortalUserPage = new SuperPortalUserPage(driver);
+        workPlacementPage = new WorkPlacementPage(driver);
+        employmentStatusPage = new EmploymentStatusPage(driver);
+        companyStructurePage = new CompanyStructurePage(driver);
+        listEmployeePage = new ListEmployeePage(driver);
     }
 
 }
