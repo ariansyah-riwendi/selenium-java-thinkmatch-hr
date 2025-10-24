@@ -12,7 +12,7 @@ public class BaseSetup {
     public void setUp() {
         driver = new ChromeDriver();
         driver.manage().window().maximize();
-        driver.get("https://superportal.connect-think.com");
+        driver.get("https://fe-hr.connect-think.com/");
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
     }
 
