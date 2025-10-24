@@ -11,12 +11,12 @@ public class LoginStep extends BaseTest {
 
     @Given("user is on the login page")
     public void userIsOnTheLoginPage(){
-        loginPage.isLoginPageImageDisplayed();
+        Assert.assertTrue(loginPage.isLoginPageImageDisplayed());
     }
 
-    @When("user input username {string}")
-    public void userInputUsername(String username) {
-        loginPage.inputUsername(username);
+    @When("user input email {string}")
+    public void userInputEmail(String email) {
+        loginPage.inputEmail(email);
     }
 
     @And("user input password {string}")
@@ -24,9 +24,9 @@ public class LoginStep extends BaseTest {
         loginPage.inputPassword(password);
     }
 
-    @And("user click login")
-    public void userClickLogin() {
-        loginPage.clickLogin();
+    @And("user click sign in")
+    public void userClickSignIn() {
+        loginPage.clickSignIn();
     }
 
     @Then("user is on the dashboard")

@@ -1,23 +1,4 @@
-# Selenium Java - Part 03: Cucumber & Hooks
-
----
-
-This project demonstrates a robust Selenium Java automation framework built with the Page Object Model (POM) design pattern and integrates Cucumber for Behavior-Driven Development (BDD). It uses Cucumber Hooks to manage WebDriver lifecycle and separates production and test code clearly, following best practices for maintainability and scalability.
-The example automation targets the OrangeHRM Demo web application.
-
----
-
-## Objectives
-- Implement Cucumber Hooks (@Before and @After) to automate WebDriver setup and teardown around each scenario.
-- Organize WebDriver initialization and page object management in reusable base classes (BaseTest, BaseSetup).
-- Structure the project with clear separation between production and test code using Maven standard folders (src/main/java and src/test/java).
-- Define Step Definitions in the test source folder to map Gherkin feature steps to Java methods.
-- Store Cucumber feature files under src/test/resources/features for clear separation and maintainability.
-- Configure a Cucumber TestNG Test Runner to execute tagged scenarios and generate rich HTML reports.
-- Apply the Page Object Model (POM) pattern to encapsulate UI elements and interactions.
-- Use utility helper classes to centralize common Selenium actions (e.g., waiting, clicking, typing).
-
----
+# Selenium Java - Thinkmatch - Super Portal
 
 ## Tools & Dependencies
 - **Java** 21
@@ -69,7 +50,7 @@ ___
 1. Open **IntelliJ IDEA**.
 2. From the main menu, select: File → New → Project from Version Control...
 3. Select **Git** from the list.
-4. Paste the repository URL: https://github.com/ariansyah-riwendi/selenium-java-part-03-cucumber.git
+4. Paste the repository URL: https://github.com/ariansyah-riwendi/selenium-java-thinkmatch-super-portal.git
 5. Click **Clone**.
 6. Wait for IntelliJ to finish downloading the project and load all dependencies.
 

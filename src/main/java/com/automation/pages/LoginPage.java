@@ -8,30 +8,30 @@ public class LoginPage {
 
     private final Utils utils;
 
-    private final By loginPageImage = By.xpath("//*[@id='app']/div[1]/div/div[1]/div/div[1]");
-    private final By usernameField = By.name("username");
-    private final By passwordField = By.name("password");
-    private final By loginButton = By.xpath("//*[@id='app']/div[1]/div/div[1]/div/div[2]/div[2]/form/div[3]/button");
-    private final By logoImage = By.xpath("//*[@id='app']/div[1]/div[1]/aside/nav/div[1]/a/div[2]/img");
+    private final By loginPageImage = By.xpath("//*[@id='root']/div/section/main/div/div/div[1]/a/img");
+    private final By emailField = By.id("email");
+    private final By passwordField = By.id("password");
+    private final By signInButton = By.xpath("//*[@id='root']/div/section/main/div/div/form/div[3]/button");
+    private final By logoImage = By.xpath("//*[@id='root']/div/aside/div[1]/a/img");
 
     public LoginPage(WebDriver driver) {
         this.utils = new Utils(driver);
     }
 
-    public void isLoginPageImageDisplayed() {
-        utils.isElementDisplayed(loginPageImage);
+    public boolean isLoginPageImageDisplayed() {
+        return utils.isElementDisplayed(loginPageImage);
     }
 
-    public void inputUsername(String username) {
-        utils.inputText(usernameField, username);
+    public void inputEmail(String email) {
+        utils.inputText(emailField, email);
     }
 
     public void inputPassword(String password) {
         utils.inputText(passwordField, password);
     }
 
-    public void clickLogin() {
-        utils.click(loginButton);
+    public void clickSignIn() {
+        utils.click(signInButton);
     }
 
     public boolean isLogoDisplayed() {
